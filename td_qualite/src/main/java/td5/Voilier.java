@@ -1,18 +1,22 @@
 package td5;
 
 /**
- * Classe abstraite représentant un voilier.
- * Un voilier a un nom et une stratégie de suivi de route.
+ * Classe représentant un voilier.
+ * Un voilier possède un nom et une stratégie de suivi de route.
  */
 public abstract class Voilier {
+
+    /** Le nom du voilier */
     private String nom;
+
+    /** La stratégie de suivi de route utilisée par le voilier */
     private SuivreRoute route;
 
     /**
-     * Constructeur pour créer un voilier avec un nom et une stratégie de suivi de route.
+     * Constructeur avec nom et stratégie de suivi de route.
      *
-     * @param nom   le nom du voilier
-     * @param route la stratégie de suivi de route associée au voilier
+     * @param nom Le nom du voilier.
+     * @param route La stratégie de suivi de route du voilier.
      */
     public Voilier(String nom, SuivreRoute route) {
         this.nom = nom;
@@ -20,45 +24,38 @@ public abstract class Voilier {
     }
 
     /**
-     * Constructeur pour créer un voilier avec uniquement un nom.
+     * Constructeur avec nom seulement.
      *
-     * @param nom le nom du voilier
+     * @param nom Le nom du voilier.
      */
-    public Voilier(String nom) {
+    public Voilier(String nom){
         this.nom = nom;
     }
 
-    /**
-     * Constructeur par défaut pour créer un voilier sans nom ni stratégie de suivi de route.
-     */
-    public Voilier() {
+    /** Constructeur par défaut */
+    public Voilier(){
     }
 
     /**
-     * Permet de modifier la stratégie de suivi de route d'un voilier.
+     * Définit la stratégie de suivi de route.
      *
-     * @param suivreRoute la nouvelle stratégie de suivi de route
+     * @param suivreRoute La nouvelle stratégie de suivi de route.
      */
-    public void setSuivreRoute(SuivreRoute suivreRoute) {
+    public void setSuivreRoute(SuivreRoute suivreRoute){
         this.route = suivreRoute;
     }
 
     /**
-     * Applique la stratégie de suivi de route actuelle au voilier.
-     * Appelle la méthode {@link SuivreRoute#suivreRoute()} de la stratégie définie.
+     * Applique la stratégie de suivi de route du voilier.
      */
-    public void appliqueSuivreRoute() {
-        if (route != null) {
-            route.suivreRoute();
-        } else {
-            System.out.println("Aucune stratégie de route définie.");
-        }
+    public void appliqueSuivreRoute(){
+        route.suivreRoute();
     }
 
     /**
-     * Retourne une représentation textuelle du voilier.
+     * Retourne une représentation sous forme de chaîne de caractères du voilier.
      *
-     * @return une chaîne de caractères représentant le voilier
+     * @return Une chaîne contenant le nom du voilier.
      */
     @Override
     public String toString() {

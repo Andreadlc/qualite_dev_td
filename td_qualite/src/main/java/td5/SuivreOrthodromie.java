@@ -1,17 +1,16 @@
 package td5;
 
 /**
- * Implémentation de l'interface {@link SuivreRoute} représentant une stratégie de suivi de route par orthodromie.
- * Cette classe définit le comportement spécifique du suivi de route pour l'orthodromie, qui est la route la plus courte entre deux points sur une sphère.
+ * Classe représentant la stratégie de suivi de route "Orthodromie".
+ * Cette stratégie permet de suivre la route Orthodromie pour un voilier.
  */
 public class SuivreOrthodromie implements SuivreRoute {
 
     /**
-     * Méthode qui imprime le suivi de la route utilisant la stratégie Orthodromie.
-     * Affiche "Orthodomie" pour indiquer que la route suit la trajectoire orthodromique.
+     * Implémentation de la méthode pour suivre la route Orthodromie.
+     * Affiche la stratégie de route suivie.
      */
-    @Override
-    public void suivreRoute() {
-        System.out.println("Orthodromie");
+    public void suivreRoute(){
+        System.out.println("Orthodomie");
     }
 }

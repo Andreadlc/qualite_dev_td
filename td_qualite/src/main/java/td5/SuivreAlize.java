@@ -1,17 +1,16 @@
 package td5;
 
 /**
- * Implémentation de l'interface {@link SuivreRoute} représentant une stratégie de suivi de route "Alizé".
- * Cette classe définit le comportement spécifique du suivi de route pour le vent Alizé.
+ * Classe représentant la stratégie de suivi de route "Alizé".
+ * Cette stratégie permet de suivre la route Alizé pour un voilier.
  */
 public class SuivreAlize implements SuivreRoute {
 
     /**
-     * Méthode qui imprime le suivi de la route utilisant la stratégie Alizé.
-     * Affiche "Alize" pour indiquer que la route suit le vent Alizé.
+     * Implémentation de la méthode pour suivre la route Alizé.
+     * Affiche la stratégie de route suivie.
      */
-    @Override
-    public void suivreRoute() {
+    public void suivreRoute(){
         System.out.println("Alize");
     }
 }
