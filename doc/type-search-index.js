@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"observateur","l":"Observateur"}];updateSearchResults();
+typeSearchIndex = [{"p":"observateur","l":"Abandon"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"observateur","l":"Categorie"},{"p":"observateur","l":"DirectionCourse"},{"p":"observateur","l":"Observable"},{"p":"observateur","l":"Observateur"}];updateSearchResults();
